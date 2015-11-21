@@ -1,4 +1,6 @@
-//#include<string>
+#ifndef printName_h
+#define printName_h
+
 class printName
 {
 	private:
@@ -9,3 +11,5 @@ class printName
 		void setName(std::string x);		
 		std::string getName();
 };
+
+#endif /* Header_h */
