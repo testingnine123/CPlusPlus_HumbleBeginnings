@@ -6,7 +6,14 @@ using namespace std;
 
 printName::printName(string nm) //constructors can have parameters as well
 {
+	cout<<"\nConstructor\n";
 	setName(nm);
+}
+
+
+printName::~printName()
+{
+	cout<<"\nDestructor\n";
 }
 
 void printName::setName(string x)
@@ -29,6 +36,8 @@ int main()
 	printName obj1(name); //the entered string will be stored in "name" private variable
 	
 	cout<<"Name entered was:"<<obj1.getName()<<"\n";
+	
+	//delete obj1;
 	
 	return 0;
 }

@@ -8,6 +8,7 @@ class printName
 	
 	public:
 		printName(std::string nm);
+		~printName();
 		void setName(std::string x);		
 		std::string getName();
 };
