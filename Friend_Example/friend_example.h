@@ -9,6 +9,7 @@ class addNum
 	
 	public:
 		addNum(int a, int b);
+		void printVar();
 		
 	friend int addition(addNum &obj1);
 	

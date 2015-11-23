@@ -3,9 +3,8 @@
 using namespace std;
 
 addNum::addNum(int a, int b)
+:num1(a),num2(b)
 {
-	num1 = a;
-	num2 = b;
 }
 
 int addition(addNum &obj1)
