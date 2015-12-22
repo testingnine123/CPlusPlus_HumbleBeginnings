@@ -11,18 +11,22 @@ class myClass
 		{
 			name = x;
 		}
-		string
-		getString(string x)
+
+		string getString(string x)
 		{
-			return x;
+			return name;
 		}
 };
+
 int main()
 {
 	string name;
-	cout<<"Enter your name:";
+	cout<<"Enter a string:";
 	cin>>name;
+	
 	myClass obj;
+	obj.setString(name);
+	
 	cout<<"Name entered was:"<<obj.getString(name)<<endl;
 	return 0;
 }
