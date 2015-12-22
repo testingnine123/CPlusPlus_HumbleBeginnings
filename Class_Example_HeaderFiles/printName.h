@@ -1,5 +1,6 @@
-#ifndef printName_h //ifndef stands for "if not defined". The first pair of statements tells the program to define the MyClass header file if it has not been defined already. This prevents a header file from being included more than once within one file.
-endif ends the condition.
+#ifndef printName_h //ifndef stands for "if not defined". The first pair of statements....
+//...tell the program to define the MyClass header file if it has not been defined.......
+//...already. This prevents a header file from being included more than once within one file.
 #define printName_h
 
 class printName
