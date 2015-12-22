@@ -1,3 +1,6 @@
+#ifndef thisPointer_h
+#define thisPointer_h
+
 #include<string>
 using namespace std;
 class myClass
@@ -9,3 +12,4 @@ class myClass
 		myClass(string name);
 		void printName();
 };
+#endif

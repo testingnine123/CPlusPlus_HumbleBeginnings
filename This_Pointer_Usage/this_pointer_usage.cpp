@@ -3,6 +3,7 @@
 #include "thisPointer.h"
 using namespace std;
 
+//initialize the values using construtor
 myClass::myClass(string nm):name(nm)
 {
 }
@@ -10,6 +11,8 @@ myClass::myClass(string nm):name(nm)
 void myClass::printName()
 {
 	cout<<name<<"\n";
+	
+	//this pointer is used to access the address of an obejct
 	cout<<this->name<<"\n";
 	cout<<(*this).name<<"\n";
 }
