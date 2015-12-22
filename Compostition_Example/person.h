@@ -8,6 +8,8 @@ class Person
 {
 	private:
 		string name;
+		
+		//create a "Birthday" class object
 		Birthday bd;
 	
 	public:
