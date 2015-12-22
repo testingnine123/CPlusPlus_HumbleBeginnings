@@ -1,4 +1,5 @@
-//Declare two integer variables "a" and "b". Print the product of the multiplication of the "a" and "b" values to the screen using two pointers (pointing to "a" and "b").
+//Declare two integer variables "a" and "b". Print the product of the...
+//...multiplication of the "a" and "b" values to the screen using two pointers (pointing to "a" and "b").
 #include<iostream>
 using namespace std;
 int main()
