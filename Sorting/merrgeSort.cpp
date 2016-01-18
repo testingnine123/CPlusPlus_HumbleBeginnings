@@ -1,3 +1,8 @@
+//worst and average case performance is O(nlog n)
+//best case O(n)
+//it's not in-place because it doesn;t take contant amount ot extra memory
+//memory depends on the number of elements
+
 #include <iostream>
 #include <vector>
 

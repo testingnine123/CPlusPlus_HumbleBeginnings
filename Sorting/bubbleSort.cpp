@@ -1,3 +1,7 @@
+//in the first pass, the heaviest element goes to the top
+//in the second pass, the second heaviest goes to the second most top place
+
+
 //average and worst case performace is O(n x n)
 //best performance when all is sorted is O(n)
 
@@ -17,6 +21,9 @@ void BubbleSort (std::vector<int> &array)
 {
 	std::cout<<"Elements in the array: "<<array.size()<<std::endl;
 
+	//flag to check if array is already sorted
+	int flag = 0;
+
 	//comparisons will be done n times
 	for (int i = 0; i < array.size() - 1; i++)
 	{
@@ -24,8 +31,13 @@ void BubbleSort (std::vector<int> &array)
 		for(int j = 0; j < array.size() - 1; j++)
 		{	
 			if (array[j] > array[j+1])
+			{
 				Swap(&array[j], &array[j+1]);
+				flag = 1;
+			}
 		}
+		if (flag == 0)
+			return;
 	}
 }
 
@@ -54,7 +66,7 @@ int main()
 	//sort the array
 	BubbleSort(array);
 
-	std::cout<<"Sorted array is as\n";
+	std::cout<<"Sorted array is\n";
 	PrintArray(array);
 
 	return 0;
