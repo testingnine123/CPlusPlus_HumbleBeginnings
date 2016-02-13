@@ -28,6 +28,35 @@ bool Stack::isFull () const
 	return stackTop == (maxStackSize - 1); 
 }
 
+void Stack::push (int item)
+{
+	//if stack is empty
+	if (isEmpty ())
+	{
+		stackTop = 0;
+		list[stackTop] = item;
+		return;
+	}
+
+	//if stack is not empty and not full
+	if (!isFull () && !isEmpty ())
+	{
+		stackTop++;
+		list[stackTop] = item;
+		return;
+	}
+	
+	//else, stack would be full
+	std::cout << "Stack is full! Can't add more\n";
+}
+
+void Stack::pop ()
+{
+	//if stack is not empty
+	if (!isEmpty())
+		stackTop--;
+}
+
 Stack::Stack (const Stack &otherStack)
 {
 	maxStackSize = otherStack.maxStackSize;
@@ -46,26 +75,7 @@ int Stack::peek ()
 	if (stackTop == -1)
 		return -99;
 	else
-		return list[stackTop - 1];
-}
-
-void Stack::push (int item)
-{
-	//check if list is full
-	if (!isFull ())
-	{
-		list[stackTop] = item;
-		stackTop++;
-	}
-	else
-		std::cout << "Stack is full! Can't add more\n";
-}
-
-void Stack::pop ()
-{
-	//check is stack is not already empty
-	if (!isEmpty())
-		stackTop--;
+		return list[stackTop];
 }
 
 Stack::~Stack ()
